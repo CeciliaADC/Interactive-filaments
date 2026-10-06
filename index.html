@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interactive figures — Three-dimensional detection of faint filaments in nearby galaxies</title>
+<style>
+  :root {
+    --ink:    #16181c;
+    --quiet:  #5c6168;
+    --rule:   #dcdee2;
+    --page:   #ffffff;
+    --link:   #2b6e9c;   /* the cool end of the Spectral map used in the figures */
+    --warm:   #9e3b35;   /* its warm end, for the galaxy rules */
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e8e6e3; --quiet: #9aa0a6; --rule: #32363b;
+      --page: #15171a; --link: #7fb6d8; --warm: #d08a84;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 4rem 1.5rem 6rem;
+    background: var(--page);
+    color: var(--ink);
+    font: 400 17px/1.65 Georgia, "Times New Roman", serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+
+  h1 {
+    font-size: 1.65rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 0 .6rem;
+  }
+  .authors { margin: 0 0 .25rem; }
+  .authors em { font-style: italic; }
+  .ref { color: var(--quiet); font-size: .95rem; margin: 0 0 2.5rem; }
+  .ref a { color: inherit; }
+
+  .note {
+    margin: 0 0 3rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+    color: var(--quiet);
+    font-size: .95rem;
+  }
+
+  section { margin-bottom: 2.75rem; }
+  h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 .9rem;
+    padding-bottom: .35rem;
+    border-bottom: 1px solid var(--warm);
+  }
+
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { padding: .55rem 0; border-bottom: 1px solid var(--rule); }
+  li:last-child { border-bottom: none; }
+
+  a.fig { color: var(--link); text-decoration: none; border-bottom: 1px solid currentColor; }
+  a.fig:hover, a.fig:focus { background: var(--link); color: var(--page); border-bottom-color: transparent; }
+  :focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+
+  .caption { display: block; color: var(--quiet); font-size: .9rem; margin-top: .2rem; }
+
+  footer {
+    margin-top: 4rem; padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    color: var(--quiet); font-size: .85rem;
+  }
+  footer a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Three-dimensional detection of faint filaments in nearby galaxies</h1>
+  <p class="authors">C. Arrizabalaga Díaz-Caneja, A. Audibert, J. Knapen, <em>et al.</em></p>
+  <p class="ref">Astronomy &amp; Astrophysics, <a href="https://doi.org/XX.XXXX/XXXX">doi:XX.XXXX/XXXX</a></p>
+
+  <p class="note">
+    Interactive versions of the figures in the paper. Each one opens in a new tab:
+    rotate, zoom and pan to inspect the recovered skeletons in three dimensions.
+    Best viewed on a desktop browser.
+  </p>
+
+  <section>
+    <h2>NGC 4303</h2>
+    <ul>
+      <li>
+        <a class="fig" href="ngc4303_top.html" target="_blank" rel="noopener">Figure 5 — skeletons on the point cloud</a>
+        <span class="caption">1-DREAM skeletons over the full point cloud and over the points retained by Hub-LAAT.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>NGC 2775</h2>
+    <ul>
+      <li>
+        <a class="fig" href="ngc2775_top.html" target="_blank" rel="noopener">Figure 7 — skeletons on the point cloud</a>
+        <span class="caption">Spiral arms traced as long, coherent skeletons.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>M 101</h2>
+    <ul>
+      <li>
+        <a class="fig" href="m101_loop.html" target="_blank" rel="noopener">Figure 2 — the high-velocity loop</a>
+        <span class="caption">Skeletons recovered from the cube degraded to ~3σ.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>NGC 3198</h2>
+    <ul>
+      <li>
+        <a class="fig" href="ngc3198_pv.html" target="_blank" rel="noopener">Figure 10 — major-axis position–velocity cut</a>
+        <span class="caption">Filaments projected onto the slice, with the beard marked.</span>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    Archived at <a href="https://doi.org/10.5281/zenodo.XXXXXXX">Zenodo</a>.
+    Source: <a href="https://github.com/USERNAME/filaments-interactive">github.com/USERNAME/filaments-interactive</a>.
+  </footer>
+
+</main>
+</body>
+</html>
